@@ -64,3 +64,22 @@ distintos (x:xs) = if elem x xs == True then False else distintos xs
 
 -- Ejercicio 5
 replicate' :: Int -> a -> [a]
+replicate' 0 n = [ ]
+replicate' 1 n = [n]
+replicate' x n = n : replicate' (x-1) n
+
+-- b)
+p_replicate' n x = n >= 0 && n <= 1000 ==> length (filter (==x) xs) == n
+                                           && length (filter (/=x) xs) == 0
+   where xs = replicate' n x
+
+-- Ejercicio 6 
+divisores :: Int -> [Int]
+divisores x = [n | n <- [1..x], divideA n x]
+ where
+     divideA n x = if mod x n == 0 then True else False
+
+divisores' :: Int -> [Int]
+divisores' x = [n | n <- [-x..(-1)], divideA n x] ++ divisores x
+ where
+     divideA n x = if mod x n == 0 then True else False
