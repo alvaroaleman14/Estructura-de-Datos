@@ -10,7 +10,6 @@
 --
 -------------------------------------------------------------------------------
 import Test.QuickCheck
-import Test.QuickCheck (Arbitrary)
 import Data.List
 
 -- Ejercicio 1
