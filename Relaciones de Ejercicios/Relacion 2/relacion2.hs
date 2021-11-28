@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 -- Estructuras de Datos. 2º Curso. ETSI Informática. UMA
 --
--- (completa y sustituye los siguientes datos)
+-- 
 -- Titulación: Grado en Ingeniería del Software.
 -- Alumno: Alemán Rando, Álvaro
 -- Fecha de entrega: DIA | MES | AÑO
